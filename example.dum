@@ -1,0 +1,32 @@
+Vertical List:
+
+element height = 5
+respect min and max = yes
+
+Button:
+    color = blue
+    height = 10
+    minimum height = 2
+    maximum height = 20
+
+Button:
+    color = green
+
+button1:
+    text = Button 1
+
+    press   = { color = red }
+    release = { color = blue }
+
+    hover enter = { size *= 2 }
+    hover leave = { size /= 2 }
+
+# This will:
+# Create a list
+# Create a blue button with the sample text
+# Create a green button with the sample text
+# Set the blue button's text to "Button 1"
+# Set the blue button's press action to change the color to red
+# Set the blue button's release action to change the color to blue
+# Set the blue button's hover enter action to change the size to 2x
+# Set the blue button's hover leave action to change the size to 1/2x
